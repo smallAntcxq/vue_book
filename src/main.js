@@ -5,8 +5,15 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+import 'mui/css/mui.css'
+import 'mui/css/icons-extra.css'
+
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+Vue.use(MintUI)
+
 new Vue({
-  router,
-  store,
-  render: h => h(App)
+    router,
+    store,
+    render: h => h(App)
 }).$mount('#app')
